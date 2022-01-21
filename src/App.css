@@ -1,0 +1,214 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    margin: 20px 0;
+}
+
+.email, .pwd {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.uploadSegment {
+    border-top: 1px solid grey;
+}
+
+.uploadTitle {
+    color: #4375A3;
+    margin: 20px 0;
+}
+
+.Pre {
+    margin-right: 100px;
+}
+
+.resultTable table, th, td {
+    margin: auto;
+    border: 1px solid black;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+}
+
+.previewPdf .react-pdf__Document {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.previewPdf .react-pdf__Page {
+    max-width: calc(100% - 2em);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 1em;
+}
+
+.previewPdf .react-pdf__Page canvas {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.previewPdf .react-pdf__message {
+    padding: 20px;
+    color: white;
+}
+
+/*.upload {*/
+/*  width: 250px;*/
+/*  height: 250px;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  border: 2px #4A4180 dashed;*/
+/*  margin: auto;*/
+/*}*/
+.terms {
+    font-size: x-small;
+    margin: auto;
+    padding-right: 20px;
+}
+
+button {
+    background-color: #3CC602;
+    color: white;
+    padding: 12px 35px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.rememberMe {
+    margin-right: 24%;
+    margin-bottom: 40px;
+}
+
+.forgotPassword {
+    color: #03adfc;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+}
+
+input[type=password]:focus {
+    border-color: cyan;
+}
+
+input[type=email]:focus {
+    border-color: cyan;
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.pb-12 {
+    padding-bottom: 3rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.creds {
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.Input_root__eG6Wl {
+    background-color: #f7f7f7;
+    width: 70%;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-width: 1px;
+    padding: .5rem .5rem .5rem .5rem;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.signInBlock {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 550px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin-bottom: 28px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+    min-width: 320px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.signInTitle {
+    text-align: left;
+    color: grey;
+    font-weight: 400;
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.emailLabel {
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordLabel {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.signInCreateAccount {
+    color: #03adfc;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    color: grey;
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.subTitle {
+    font-weight: 500;
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 20px;
+}
