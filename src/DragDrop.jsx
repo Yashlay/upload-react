@@ -69,9 +69,9 @@ class DragDrop extends React.Component {
                 {this.state.drag &&
                     <div
                         style={{
-                            border: '2px dashed purple',
-                            backgroundColor: '#f8ceec',
-                            backgroundImage: "linear-gradient(180deg, #f8ceec 0%, #a88beb 74%)",
+                            border: '2px dashed red',
+                            backgroundColor: '#D30803',
+                            backgroundImage: "linear-gradient(180deg, #D30803 0%, #FEB2B0 74%)",
                             position: 'absolute',
                             top: 0,
                             bottom: 0,
@@ -89,7 +89,7 @@ class DragDrop extends React.Component {
                                 left: 0,
                                 textAlign: 'center',
                                 fontSize: '25px',
-                                color: 'rebeccapurple'
+                                color: 'red'
                             }}
                         >
                             <div>Drop Here</div>

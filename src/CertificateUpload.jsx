@@ -11,11 +11,18 @@ class CertificateUpload extends React.Component {
         this.state = {
             pageNumber: 1,
             file: "",
-            result: []
+            result: [],
+            vendor: 1
         };
         pdfjs.GlobalWorkerOptions.workerSrc =
             `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
+    }
+
+    componentDidMount() {
+        this.setState({
+            vendor: 1
+        });
     }
 
     onDocumentLoadSuccess({numPages}) {
@@ -57,6 +64,12 @@ class CertificateUpload extends React.Component {
         this.changePage(-1);
     }
 
+    onChangeOfSelect(e) {
+        this.setState({
+            vendor: e.target.value
+        });
+    }
+
     nextPage() {
         this.changePage(1);
     }
@@ -85,6 +98,17 @@ class CertificateUpload extends React.Component {
                 </div>
 
                 <div className="uploadSegment">
+                        <div>
+                            <div className="uploadTitle">Select Vendor</div>
+                            <div>
+                                <select id='vendorSelect' onChange={(e) =>
+                                    this.onChangeOfSelect(e)
+                                }>
+                                    <option value="1">Tenaris</option>
+                                    <option value="2">Heng Yang</option>
+                                </select>
+                            </div>
+                        </div>
                     {!this.state.file ?
                         <div>
                             <div className="uploadTitle">Select the certificate (PDF) you want to compare</div>
@@ -92,16 +116,16 @@ class CertificateUpload extends React.Component {
                                 <div style={{
                                     height: 200,
                                     width: 325,
-                                    backgroundColor: "#f8ceec",
-                                    backgroundImage: "linear-gradient(180deg, #f8ceec 0%, #a88beb 74%)",
-                                    border: "2px dashed purple",
+                                    backgroundColor: "#D30803",
+                                    backgroundImage: "linear-gradient(180deg, #D30803 0%, #FEB2B0 74%)",
+                                    border: "2px dashed red",
                                     borderRadius: "10px"
                                 }}>
-                                    <div style={{"marginTop": "45px", "marginBottom": "20px"}}>Drag and drop files here
+                                    <div style={{"marginTop": "45px", "marginBottom": "20px", "color": "white"}}>Drag and drop files here
                                     </div>
-                                    <div style={{"marginBottom": "20px"}}>or</div>
+                                    <div style={{"marginBottom": "20px", "color": "white"}}>- OR -</div>
                                     <label htmlFor="dragFileUpload" className="custom-file-upload">
-                                        Browse files
+                                        Browse file
                                     </label>
                                     <input id="dragFileUpload"
                                            onChange={(fileChangeEvent) => {
@@ -144,7 +168,7 @@ class CertificateUpload extends React.Component {
                                         Next
                                     </button>
                                 </div>
-                                <p>Page {this.state.pageNumber} of {this.state.numPages}</p>
+                                <p className="text">Page {this.state.pageNumber} of {this.state.numPages}</p>
                             </div>
                             : ""}
                     </div>
@@ -157,24 +181,49 @@ class CertificateUpload extends React.Component {
                 </div>
                 {this.state.result.length > 0 ?
                     <div style={{"marginTop": "15px", "paddingBottom": "15px", "borderBottom": "1px solid grey"}}>
-                        Result Set
+                        <p className="text">Result Set</p>
                         <div>
                             <table style={{"margin": "auto"}} className="resultTable">
                                 <tbody>
                                 <tr>
-                                    <th>Company</th>
-                                    <th>Contact</th>
-                                    <th>Country</th>
+                                    <th>Key</th>
+                                    <th>Value</th>
                                 </tr>
                                 <tr>
-                                    <td>Alfreds Futterkiste</td>
-                                    <td>Maria Anders</td>
-                                    <td>Germany</td>
+                                    <td>Number / Numero:</td>
+                                    <td>01-19-14826</td>
                                 </tr>
                                 <tr>
-                                    <td>Centro comercial Moctezuma</td>
-                                    <td>Francisco Chang</td>
-                                    <td>Mexico</td>
+                                    <td>Date / Data:</td>
+                                    <td>December 19, 2019</td>
+                                </tr>
+                                <tr>
+                                    <td>Page / Pagina:</td>
+                                    <td>1/8</td>
+                                </tr>
+                                <tr>
+                                    <td>Dimensions / Dimensioni:</td>
+                                    <td>@ 24.000" O.D. x .969" W.T.<br/>@610.00mm O.D. x 24.61mm W."</td>
+                                </tr>
+                                <tr>
+                                    <td>Schedule / Schedula:</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr>
+                                    <td>Length / Lunghezza:</td>
+                                    <td>34.449 ft + 38.714 ft<br/>10500 mm + 11800 mm</td>
+                                </tr>
+                                <tr>
+                                    <td>Standard or Specification / Norme o specifica:</td>
+                                    <td>See note nr.1<br/>Vedi nota nr.1 ae BS</td>
+                                </tr>
+                                <tr>
+                                    <td>Manufacture Process / Processo di fabbricazione:</td>
+                                    <td>NORMALIZED<br/>NORMALIZZATI</td>
+                                </tr>
+                                <tr>
+                                    <td>Product Type / Tipo di prodotto:</td>
+                                    <td>SEAMLESS LINE PIPES (WITH EXTRA REQUIREMENTS)<br/>TUBI S.S. LINE PIPE (CON RICHIESTE SUPPLEMENTARI)</td>
                                 </tr>
                                 </tbody>
                             </table>
