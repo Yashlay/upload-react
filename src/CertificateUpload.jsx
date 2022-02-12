@@ -2,7 +2,10 @@ import React from "react";
 import {Document, Page, pdfjs} from "react-pdf";
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import DragDrop from "./DragDrop";
-
+import api from './appApi';
+import Request from 'axios-request-handler';
+const INITIATE_PROCESSING_URL = window.location.protocol + '//' + window.location.hostname + "/listing/";
+const POLLING_INTERVAL = 10000;
 
 class CertificateUpload extends React.Component {
 
@@ -12,7 +15,8 @@ class CertificateUpload extends React.Component {
             pageNumber: 1,
             file: "",
             result: [],
-            vendor: 1
+            vendor: 1,
+            fileId: -1
         };
         pdfjs.GlobalWorkerOptions.workerSrc =
             `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -36,16 +40,75 @@ class CertificateUpload extends React.Component {
             window.alert("No file selected. Please upload file.");
             return;
         }
-        this.setState({
-            result: ['sdc']
+
+        api.upload({
+            file: this.state.file,
+            type: this.state.vendor
+        }).then((response) => {
+            if (response.status === 200) {
+                this.setState({
+                    fileId: response.data.fileID
+                });
+                this.startProcessing(response.data.fileID).then((response) => {
+                    console.log("" + JSON.stringify(response));
+                    // todo process the received data.
+                    this.setState({
+                        result: ['sdc']
+                    });
+                }).catch((err) => alert(err));
+          /*      api.startProcessing().then((response) => {
+                    console.log("" + response);
+                    this.setState({
+                        result: ['sdc']
+                    });
+                }).catch((err) => alert(err));*/
+            } else {
+                alert("Error uploading the file.");
+            }
+        }).catch((error) => {
+            alert(error.response.data.errorMessage);
         });
     }
+
+    // initiateProcessing(fileID) {
+    //     return api.initiateProcessing(fileID)
+    //         .then((response) => {
+    //             if (response.status === 200) {
+    //                 if (response.data.status === "Processed") {
+    //                     return Promise.resolve(response.data.data);
+    //                 } else {
+    //                     return Promise.resolve()
+    //                         .then(this.initiateProcessing(fileID)).
+    //                 }
+    //             } else {
+    //                 alert("Error initiating the process the file.");
+    //             }
+    //         })
+    // }
 
     clear() {
         this.setState({
             file: "",
             result: []
         })
+    }
+
+    startProcessing(fileId) {
+        return new Promise((resolve, reject) => {
+            let data = {};
+            let dataReceived = false;
+            const initProcessing = new Request(INITIATE_PROCESSING_URL + fileId);
+            initProcessing.poll(POLLING_INTERVAL).get((res) => {
+                if (res.data.status === "Processed") {
+                    dataReceived = true;
+                    data = res.data.data;
+                    return false;
+                }
+            });
+            if (dataReceived) {
+                resolve(data);
+            }
+        });
     }
 
     handleDrop = (files) => {
@@ -66,7 +129,7 @@ class CertificateUpload extends React.Component {
 
     onChangeOfSelect(e) {
         this.setState({
-            vendor: e.target.value
+            vendor: Number(e.target.value)
         });
     }
 
@@ -104,8 +167,8 @@ class CertificateUpload extends React.Component {
                                 <select id='vendorSelect' onChange={(e) =>
                                     this.onChangeOfSelect(e)
                                 }>
-                                    <option value="1">Tenaris</option>
-                                    <option value="2">Heng Yang</option>
+                                    <option value={1}>Tenaris</option>
+                                    <option value={2}>Heng Yang</option>
                                 </select>
                             </div>
                         </div>
