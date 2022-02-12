@@ -16,6 +16,7 @@ class CertificateUpload extends React.Component {
             pageNumber: 1,
             file: "",
             result: [],
+            maxSize: 1,
             vendor: 1,
             fileId: -1
         };
@@ -38,6 +39,7 @@ class CertificateUpload extends React.Component {
 
     parseResults(result) {
         let results = [];
+        let maxSize = 1;
         for (let key of Object.keys(result)) {
             let row = result[key];
             if (typeof row === "string") {
@@ -52,6 +54,7 @@ class CertificateUpload extends React.Component {
                     rowRes.value = row[1];
                     results.push(rowRes);
                 } else if (typeof row[0] === "object" && Array.isArray(row[0])) {
+                    maxSize = Math.max(maxSize, row.length);
                     for (let index in row) {
                         if (key.includes("_header") > 0) {
                             let rowRes = {};
@@ -82,7 +85,7 @@ class CertificateUpload extends React.Component {
             }
 
         }
-        return results;
+        return {maxSize: maxSize, resultant: results};
     }
 
     extract() {
@@ -91,9 +94,11 @@ class CertificateUpload extends React.Component {
             return;
         }
         // todo uncomment below 3 lines for stubs
-        // this.setState({
-        //     result: this.parseResults(stub.data)
-        // });
+        let parsedResults = this.parseResults(stub.data);
+        this.setState({
+            result: parsedResults.resultant,
+            maxSize: parsedResults.maxSize
+        });
         api.upload({
             file: this.state.file,
             type: this.state.vendor
@@ -103,8 +108,10 @@ class CertificateUpload extends React.Component {
                     fileId: response.data.fileID
                 });
                 this.startProcessing(response.data.fileID).then((response) => {
+                    let parsedResults = this.parseResults(response);
                     this.setState({
-                        result: this.parseResults(response)
+                        result: parsedResults.resultant,
+                        maxSize: parsedResults.maxSize
                     });
                 }).catch((err) => alert(err));
             } else {
@@ -118,7 +125,8 @@ class CertificateUpload extends React.Component {
     clear() {
         this.setState({
             file: "",
-            result: []
+            result: [],
+            maxSize: 1
         })
     }
 
@@ -279,7 +287,7 @@ class CertificateUpload extends React.Component {
                                 <tbody>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Value</th>
+                                    <th colSpan={this.state.maxSize}>Value</th>
                                 </tr>
                                 {
                                     this.state.result.map((result, index) => (
