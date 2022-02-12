@@ -1,0 +1,571 @@
+{
+  "status": "Processed",
+  "data": {
+    "1_certificate_details": [{
+      "Sheet No.": "0187619"
+    }, {
+      "CERTIFICATE NO.": " ; 20200709"
+    }],
+
+    "1_order_details": [{
+      "CUSTOMER:": "oe GERAB NATIONAL ENTERPRISES -"
+    }, {
+      "TRAIN NO.:": "ie 1070903 1 er\u201d"
+    }, {
+      "DATE:": "20200210"
+    }, {
+      "_ CONTRACT-ITEMNO.: |": "\u2014 2319110005005"
+    }, {
+      "P.O.NO.:": "PO 1813701329"
+    }, {
+      "DELIVERY CONDITION:": "Normalized 7"
+    }, {
+      "PRODUCT: _": "a Seamless Line Pipe"
+    }, {
+      "PROCESS OF MANUFACTURE:": "HOT FINISHED SEAMLESS"
+    }, {
+      "HEAT TREATMENT:": "Normalized in 880 \u00b0C\u00a310\u00b0C cooling in the still air"
+    }, {
+      "a SPECIFICATION:": "API SL 46TH PSL2 /ASTM A106/A53 2018/ASME SA 106 2019 Gr.B /KOC-MS-001 PART] REV.2/NACE MRO175-2015/SO15156-2015/NACE MR0103-2015/ASME B36.10"
+    }, {
+      "PIPE-END DESCRIBE: a": "Beveling"
+    }, {
+      "DIMENSIONS:": "219. 1mm*12.7mm*1 lm~1 1.8m"
+    }, {
+      "GRADE:": "B/BNS/X42NS"
+    }, {
+      "L/C ISSUING BANK:": ""
+    }, {
+      "REMARK:": "1,FULL DESCRIPTION OF THE MATERIAL AS PER APPLICANT'S PURCHASE ORDER. 2,Steel Making Process by Electric Arc Fumace,vacuum degassed, fully killed & fine grain practice\n3,Compliance to ASME Section II part A 5,MPI(1/50)"
+    }, {
+      "LIC NO.:": ""
+    }, {
+      "L/C ISSUING DATE:": ""
+    }, {
+      "TOTAL BUNDLES:": "20"
+    }, {
+      "TOTAL PIECES:": "60"
+    }, {
+      "TOTAL LENGTH:": "685.09 m"
+    }, {
+      "TOTAL WEIGHT:": "44,288 mt"
+    }],
+
+    "1_test_header": [
+      ["NO."],
+      ["TEST LOT No."],
+      ["HEAT No."],
+      ["BUNDLES"],
+      ["PIECES"],
+      ["LENGTH", "m"],
+      ["WEIGHT", "mt } Wi"],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "Charpy V/T/0\u00b0C/10x10x55mm", "AKI(J)"],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "Charpy V/T/0\u00b0C/10x10x55mm", "Avy)"],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "Charpy V/T/0\u00b0C/10x10x55mm", "%S.A."],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "Charpy V/T/0\u00b0C/10x10x55mm", "LE"],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "", "AK2(J)"],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "", "Av."],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "", "S.A."],
+      ["IMPACT TEST NOTCH TYPE/ORIENTATION/TEMPERATURE(\u2018C)/SIZE (mm) :", "", "LE"]
+    ],
+
+    "1_tests": [
+      ["1", "519120263", "19308883", "20", "60", "685.09", "44,288", "288/292/285/", "288/", "", "", "", "", "", ""],
+      ["2", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      ["3", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      ["4", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      ["5", "OS", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    ],
+
+    "1_quick_tests": [{
+      "_ HYDROSTATIC TEST": "30.5/10 MPa/s ACCEPTABLE"
+    }, {
+      "RESIDUAL MAGNETIC": "ACCEPTABLE"
+    }, {
+      "FLATTENING TEST": "ACCEPTABLE"
+    }],
+
+    "1_tensile_header": [
+      ["NO."],
+      ["- TENSILE TEST(S Tx38mm/L/50)", "SAMPLE TYPE-SIZE(mm)/ORIENTATION/GAUGE LENGTH(mm)", "TS(MPa)"],
+      ["- TENSILE TEST(S Tx38mm/L/50)", "SAMPLE TYPE-SIZE(mm)/ORIENTATION/GAUGE LENGTH(mm)", "YS(MPa)", "Rt0.5"],
+      ["- TENSILE TEST(S Tx38mm/L/50)", "SAMPLE TYPE-SIZE(mm)/ORIENTATION/GAUGE LENGTH(mm)", "EL(%)"],
+      ["- TENSILE TEST(S Tx38mm/L/50)", "SAMPLE TYPE-SIZE(mm)/ORIENTATION/GAUGE LENGTH(mm)", "R.A(%)"],
+      ["- TENSILE TEST(S Tx38mm/L/50)", "SAMPLE TYPE-SIZE(mm)/ORIENTATION/GAUGE LENGTH(mm)", "YS/TS"]
+    ],
+
+    "1_tensile_tests": [
+      ["1", "474/", "347/", "33)", "", "0.73/"],
+      ["2", "", "", "", "", ""],
+      ["3", "", "", "", "", ""],
+      ["4", "", "", "", "", ""],
+      ["5", "", "", "", "", ""]
+    ],
+
+    "1_hardness_header": [
+      ["HARDNESS TEST \u00a2 HVI10 )", "Inside"],
+      ["HARDNESS TEST \u00a2 HVI10 )", "Middle"],
+      ["HARDNESS TEST \u00a2 HVI10 )", "Outside"]
+    ],
+
+    "1_hardness_tests": [
+      ["141/143/144/142/", "148/151/149/150/", "143/141/142/140/"],
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""]
+    ],
+
+    "1_nonmetal_header": [
+      ["GRAIN\nSIZE"],
+      ["Al"],
+      ["NONMETAL INCLUSION", "A", "Cc"],
+      ["NONMETAL INCLUSION", "A", "F"],
+      ["NONMETAL INCLUSION", "B", "Cc"],
+      ["NONMETAL INCLUSION", "B", "F"],
+      ["NONMETAL INCLUSION", "Cc", "Cc"],
+      ["NONMETAL INCLUSION", "F"],
+      ["NONMETAL INCLUSION", "D", "Cc"],
+      ["NONMETAL INCLUSION", "D", "F"],
+      ["NONMETAL INCLUSION", "Ds"]
+    ],
+
+    "1_nonmetal_tests": [
+      ["8.5/", "NIA", "NIA", "NIA", "N/A", "N/A", "N/A", "N/A", "NIA", "NIA", "N/A"],
+      ["", "", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", "", ""],
+      ["", "", "", "", "", "", "", "", "", "", ""]
+    ],
+
+    "1_legend": "NOTE: - Av.--AVERAGE S.A.--SHEAR AREA SAMPLE ORIENTATION : L--LONGITUDINAL _T--TRANSVERSE\nW1--THEORETICAL WEIGHT AK1--ABSORB ENERGY FOR THE FIRST SET SAMPLE TYPE: S--STRIP B--BAR | F--FULL-SECTION a! - a)\nW2--ACTUAL WEIGHT AK2--ABSORB ENERGY FOR THE SECOND SET LE--SIDE EXPANSION 4. AE-BANDED STRUCTURE\nN/A--NOT AVAILABLE PIPE END MACHINING:ACCEPTABLE WA pee ee\u201d\n\nRegister of Shipping certificate NO.: Sy ara es ae\n\nSurveyor or customer third party: Certificate-maker: ay ey Auditor: it rk uality Managers og _ Page: 1/2",
+
+    "2_certificate_details": [{
+      "Sheet No.": "(187620"
+    }, {
+      "CERTIFICATE NO.": " 20200709"
+    }],
+
+    "2_chem_comp_header": [
+      ["NO."],
+      ["HEAT No.", "TEST LOT No.", "TEST LOT No."],
+      ["TPYE", "*10"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Cc", "2"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Si", "2"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Mn", "2"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "P", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "S", "4"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Cu", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Ni", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Cr", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Mo", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Vv", "4"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Ti", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "B", "4"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Nb", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Al", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "Ca", "4"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "N", "5"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "SUM6", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "SUMS5", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "R3", "0"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "R4", "0"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "SUME", "3"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "SUMF", "2"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "SUMG", "2"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "", ""],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "", ""],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "", ""],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "", "-"],
+      ["ee | eee a CHEMICAL COMPOSITION (% \u201c90/0903 \\~2 ne", "", ""]
+    ],
+
+    "2_chemical_composition_tests": [
+      [1, "19308883", "y Elect", "11", "32", "135", "13", "12", "79", "25", "76", "13", "34", "13", "4", "12", "38", "17", "100", "28", "15", "", "38", "196", "20", "36", "", "", "", "", ""],
+      [1, "\u00a719120263", "P", "11", "30", "135", "13", "I!", "76", "24", "80", "16", "37", "12", "5", "10", "37", "32", "600", "26", "14", "3", "6", "200", "20", "36", "", "", "", "", ""],
+      [1, "$19120263", "P", "12", "30", "135", "13", "12", "77", "25", "78", "16", "36", "12", "4", "1]", "35", "24", "200", "27", "15", "2", "18", "200", "21", "37", "", "", "", "", ""],
+      [2, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [2, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [2, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [3, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [3, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [3, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [4, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [4, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [4, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [5, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [5, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+      [5, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+    ],
+
+    "2_non_destructive_test_title": "Non-Destructive Test (each pipe)",
+
+    "2_non_destructive_test_header": [
+      ["Position"],
+      ["NDT Type"],
+      ["ET Through Hole Size"],
+      ["MPI Sensitivity Test\nPanel"],
+      ["Longitudinal", "External Surface"],
+      ["Longitudinal", "Internal Surface"],
+      ["Transverse", "Extemal Surface"],
+      ["Transverse", "Internal Surface"],
+      ["Laminar", "Flat Bottom Hole Size"],
+      ["Laminar", "Coverage %"],
+      ["Thickness Testing\nCoverage %"],
+      ["Result"]
+    ],
+
+    "2_non_destructive_tests": [
+      ["PIPE BODY", "UT+MFL+MPI", "", "Al-30/100", "L2(SUWT} S%OWT", "L2S%WT)", "LISHWT HH SHWT", "L2(SWT)", "6rLs", "100", "50", "ACCEPTABLE"],
+      ["PIPE END", "UT+MPI", "", "A1-30/100", "L2(5%WT)", "L25%WT)", "L2(S%WT)", "LUSWT)", "064", "100", "bal]", "ACCEPTABLE"],
+      ["GROOVE", "", "", "", "", "", "", "", "", "", "", ""]
+    ],
+
+    "2_non_destructive_tests_legend": "NOTE: WT--Wall Thickness. UT--1S010893-10/ASTM E 213 UT--ISO10893-10/ASTM E 213 MFL~ISO 10893-3/ASTM E570 MPI-ISO 10893-S/ASTM E709 CIpcs\u2019$0pes) MPI-ISO 10893-S/ASTME709 The blind area at the pipe end of the manufacturer automatic NDT has been eliminated by manual NDE or excision.",
+
+    "2_legend": "NOTE: H--HEAT ANALYSIS P--PRODUCT ANALYSIS CHEMICAL COMPOSITION*10: 0--x1 1--x10 2--x100 3--x 1000 4--\u00ab10000 5--x 100000\nSUM6:Nb+Ti+V;SUMS:Nb+V;R3:Ca/S;R4:AI/N;SUME:Cut+Nit+Cr+V+Mo;SUMF:PCM;SUMG:CE;\nThe latest version of any undated standard applies to this certificate. ee\nWe hereby declare that the product herein described has been manufactured, sampled, tested or inspected, or both, in accordance with this standard and specifications required in your order _ has teen found to. meet the: Sclacaa\nThis certificate is issued by a computerized system and it is valid with electronic signature. In case the owner of the certificate would release a copy of it ,he must attest its conformity to the original \u2018one taking upon himself the. ; 7 \\\nresponsibility for any unlawful or not allowed use. . i ca 7 : eee\u2019 ie, / A\nAny alteration and/or falsification will be subject to the law. re \u2014_ A , ry f\nIf you need to assure the authenticity of this certificate \u00bbplease do not hesitate to contact Hengyang Valin Steel Tube CO.,LTD, E-mail: hsiec@hysteeltube.com ie ss 4 = : ed\nXoqiygr sy Me\nRegister of Shipping certificate NO.: we We Fp _\nSurveyor or customer third party: Certificate-maker: 1 Auditor: it Fk GE Quality Manager: y Page: 2/2",
+
+    "3_testing": ["\u4e2d \u56fd \u8ba4 \u53ef\n\u68c0 \u6d4b", "TESTING\nCNAS L3840"],
+
+    "3_company": ["\u8861 \u9633 \u534e \u83f1 \u94a2 \u7ba1 \u6709 \u9650 \u516c \u53f8 \u68c0 \u9a8c \u68c0 \u6d4b \u4e2d \u5fc3", "Test Center of Hengyang Valin Steel Tube Co., Ltd."],
+
+    "3_hic_test_report": "HIC TEST REPORT",
+
+    "3_hic": "HIC \u68c0 \u6d4b \u62a5 \u544a",
+
+    "3_test_no": "Test No\u3014\u3008 \u7f16 \u53f7 ): kS200220103",
+
+    "3_contract_no": "Contract No ( \u5408 \u540c \u53f7 ):,__2319110005005",
+
+    "3_steel_grade": "Grade of Steel ( \u94a2 \u7ea7 ): BNS/X42NS",
+
+    "3_sample_size": "Sample Size ( \u89c4 \u683c ): 9219.1X 12.7mm",
+
+    "3_pipe_type": "Type of Pipe ( \u94a2 \u7ba1 \u7c7b \u578b ), _Seamiless \u65e0 \u7f1d \u94a2 \u7ba1",
+
+    "3_test_method": "Test Method ( \u68c0 \u6d4b \u65b9 \u6cd5 ): HIC",
+
+    "3_address": ["\u5730 \u5740 , \u6e56 \u5357 \u8861 \u9633 \u5e02 \u5927 \u6817 \u65b0 \u6751 10 \u53f7", "Address: No.10, Dalixincun, Hengyang, Hunan, China"],
+
+    "3_phone": ["\u7535 \u8bdd : 0734-887S123", "Telephone"],
+
+    "3_fax": ["\u4f20 \u771f : 0734-8875123", "Fax"],
+
+    "3_post_code": ["\u90b9 \u7f16 : 421001", "Post code"],
+
+    "4_title": ["INSTRUCTION", "\u6ce8 \u610f\n\u4e8b \u9879"],
+
+    "4_instructions": [
+      ["1. The report shall be invalid without the appropriate stamp specialized for test and paging seal on it.", "\u68c0 \u9a8c \u62a5 \u544a \u672a \u52a0 \u76d6 \u201c \u68c0 \u6d4b \u4e13 \u7528 \u7ae0 \u201c \u4e0e \u201c \u9a91 \u7f1d \u7ae0 \u201c \u65e0 \u6548 \u3002"],
+      ["2. The report shall be invalid without the signatures of the persons for authorization, or if any modifications on it.", "\u68c0 \u9a8c \u62a5 \u544a \u65e0 \u6388 \u6743 \u7b7e \u5b57 \u4eba \u7b7e \u5b57 \u65e0 \u6548 , \u6d82 \u6539 \u65e0 \u6548 \u3002"],
+      ["3. Reproduction in any organization or individual in part(except in whole) without prior written permission is prohibited", "\u672a \u7ecf \u4e66 \u9762 \u6279 \u51c6 , \u4e0d \u5f97 \u90e8 \u5206 \u590d \u5236 \u672c \u62a5 \u544a ( \u5168 \u90e8 \u590d \u5236 \u9664 \u5916 ) \u3002"],
+      ["4. For the entrusted sample tests, the responsibilities are undertaken for the delivered samples only.", "\u59d4 \u6258 \u68c0 \u9a8c \u53ea \u5bf9 \u6765 \u6837 \u8d1f \u8d23 \u3002"],
+      ["5. Ifany dissented opinions to the test report, it shall be reported to the test center within 15 days from the date of receiving the test report.", "\u5982 \u5bf9 \u672c \u62a5 \u544a \u6709 \u5f02 \u8bae , \u8bf7 \u5728 \u53d1 \u51fa \u62a5 \u544a \u4e4b \u65e5 \u8d77 15 \u5929 \u5185 \u63d0 \u51fa \u3002"],
+      ["6. The test Center will keep the samples for one month.", "\u672c \u4e2d \u5fc3 \u4fdd \u7559 \u68c0 \u6d4b \u6837 \u54c1 \u4e00 \u4e2a \u6708 \u3002"],
+      ["7. The projects with \u201c*\u201d are for subcontract, with \u201c/\\\u201dare beyond the accreditation.", "\u5e26 \u201c*2\u201c \u4e3a \u5206 \u5305 \u9879 \u76ee , \u5e26 \u201c \u4eba \u201c \u4e3a \u975e \u8ba4 \u53ef \u9879 \u76ee \u3002"]
+    ],
+
+    "5_title": "HIC Test Report",
+
+    "5_sub_title": "H IC \u68c0 \u6d4b \u62a5 \u544a",
+
+    "5_header": [{
+      "No:": "FS200220103"
+    }, {
+      "Page": "| of 4"
+    }],
+
+    "5_report_details": [{
+      "Otriginal of\nSpecimen\n\u9001 \u68c0 \u5355 \u4f4d": "340 Branch"
+    }, {
+      "Conttract No.\n\u5408 \u540c \u53f7": "2319110005003"
+    }, {
+      "Address\n\u5355 \u4f4d \u5730 \u5740": "Mo. 10 Dalixincuu Hengyang, Hunan PR. CHINA 421001\n\u6e56 \u5357 \u7701 \u8861 \u9633 \u5e02 \u5927 \u6817 \u65b0 \u6751 10 \u53f7 421001"
+    }, {
+      "Gtrade of steel\n\u94a2 \u7ea7": "BMNS/X42MNS"
+    }, {
+      "Product\nspeciftication lever\n\u4ea7 \u54c1 \u89c4 \u8303 \u7b49 \u7ea7": "PSL2"
+    }, {
+      "Lot No.\n\u6279 \u53f7": "53519120263"
+    }, {
+      "Heat MNo.\n\u7089 \u53f7": "19308883"
+    }, {
+      "Qhu\n\nanti\n\nM l\n\u5784\u5d14\u3014\u7687\u4e00t\u3009\u2032": "1 set \u300a3pcs )\n1 \u7ec4 (3 \u4e2a )"
+    }, {
+      "Specimen State\n\u6837 \u54c1 \u72b6 \u6001": "As Standard\nRedquirement\n\u5408 \u683c"
+    }, {
+      "Test Properties\n\u68c0 \u6d4b \u9879 \u76ee": "Hydrogen Induced\nCtracking (HIC)\n\u6c21 \u81f4 \u5f00 \u88c2"
+    }, {
+      "Method of test for\ndegtreasing\n\u8131 \u8102 \u6d4b \u8bd5 \u65b9 \u6cd5": "Wipe\n\u64e6 \u62ed \u6cd5"
+    }, {
+      "Test Standard\n\u68c0 \u6d4b \u6807 \u51c6": "NACE TM 0284-2016 4"
+    }, {
+      "]\nTest Conclusion\n\u68c0 \u6d4b \u7ed3 \u8bba": "T According to NACE TM 0284-2016, the crack sensitivity ratio\n\u5bb3 (CSR) ,crack length ratiot(CLR) and crack thickness ratio\u300aCTR )\nare all zero after 96 hours testing.\n\nULltrasonic ls OK.\n\nThe test result is acceptable.\n\n\u6839 \u636e NACE TM0284-2016,96 \u5c0f \u65f6 \u8bd5 \u9a8c \u540e CSR,CLR,CTR \u5747 '\n\u4e3a 0, \u8d85 \u58f0 \u63a2 \u4f24 \u5408 \u683c , \u6d4b \u8bd5 \u7ed3 \u679c \u5408 \u683c . \u3011"
+    }, {
+      "Collected by\n\u6c47 \u6000": "\u5317 2yr"
+    }, {
+      "Certified by\n\u6279 \u51c6": "~ \u602a"
+    }, {
+      "Issue Date\n\u7b7e \u53d1 \u65e5 \u671f": "a78 . \u516d"
+    }],
+
+    "6_title": "HIC Test Report (Annex)",
+
+    "6_sub_title": "HIC \u68c0 \u6d4b \u62a5 \u544a ( \u9644 \u4ef6 )",
+
+    "6_header": [{
+      "No:": "FS200220103"
+    }, {
+      "Page": "2 of 4"
+    }],
+
+    "6_report_details": [{
+      "Grade of steel\n\u94a2 \u7ea7": "BMNS/X42MNS"
+    }, {
+      "Size\n\u89c4 \u683c": "\u7531 219.1 X 12.7mm"
+    }, {
+      "Lot No.\n\u6279 \u53f7": "3191202603"
+    }, {
+      "Heat MNo,\n\u7089 \u53f7": "19308883"
+    }, {
+      "Test Standard\n\u68c0 \u6d4b \u6807 \u51c6": "NACE TM 0284-2016"
+    }, {
+      "Specimen MNo.\n\u8bd5 \u6837 \u7f16 \u53f7": "12356-1, 1236-2, 1256-3"
+    }, {
+      "Test Properties\n\u68c0 \u6d4b \u9879 \u76ee": "Hydrogen Induced Cracking (HIC)\n\u6c21 \u81f4 \u5f00 \u88c2"
+    }, {
+      "Dimension of\nSpecimens\n\u8bd5 \u6837 \u5c3a \u5bf8": "Fig.1 shows the dimensions of test specimens,The test specimen\nthickness is at least 80% WT of the pipe, and a maximum of 1 mm may be\nremoved from each of surfaces,.\n\n\u8bd5 \u6837 \u5f62 \u72b6 \u5982 \u56fe 1 \u6240 \u793a \u3002 \u539a \u5ea6 t \u53c2 \u7167 \u7ba1 \u58c1 \u622a \u53d6 , \u81f3 \u5c11 \u4e3a \u6574 \u4e2a \u7ba1 \u58c1 \u539a \u5ea6\n\u7684 80% \u4ee5 \u4e0a , \u6700 \u5927 \u5207 \u524a \u91cf \u4e0d \u8d85 \u8fc7 1mm"
+    }, {
+      "Temperature\n\u6e29 \u5ea6": "24 C-25 C"
+    }, {
+      "Deaerated Gas\n\u9664 \u6c27 \u6c14 \u4f53": "99.99926 MN2"
+    }, {
+      "Test Time\n\u8bd5 \u9a8c \u65f6 \u95f4": "96 h"
+    }, {
+      "Test Gas\n\u8bd5 \u9a8c \u6c14 \u4f53": "99.9% Fo8"
+    }, {
+      "Saturated H2S\nconcehntration\n\u9971 \u548c H5S \u6d53 \u5ea6": "2412ppm"
+    }, {
+      "End FH2S\nconcentratioh\n\u7ed3 \u675f H2S \u6d53 \u5ea6": "2567ppm"
+    }, {
+      "Degreased\n\u8131 \u80fd": "Prior to testing, the test specimens shall be degreased wilth\nethanol and rinsed with acetone.The adequacy of the\ndegtreasing by the atomizer test in accordance with ASTM\nStandard F 21. \u8bd5 \u9a8c \u524d , \u5e94 \u7528 \u4e09 \u6c2f \u4e59 \u70f7 \u6216 \u7c7b \u4f3c \u8131 \u8102 \u5242 \u5bf9 \u8bd5\n\u4ef6 \u9664 \u6cb9 , \u7136 \u540e \u9009 \u62e9 \u5408 \u9002 \u7684 \u6eb6 \u6db2 , \u5982 \u4e19 \u916e \u8fdb \u884c \u6e05 \u6d17 \u3002 \u4f9d \u636e\nASTM \u6807 \u51c6 F 21"
+    }, {
+      "Test Solution\n\u8bd5 \u9a8c \u6eb6 \u6db2": "0.5wt2%6 CH3COOH and 3wt% 0 NaC! in distilled water\nsaturated with H2S CNACE TM 0284-2016 solution A )\nH2S \u9971 \u548c \u7684 0.5Swt%6 \u51b0 \u918b \u9178 +Swt%MaCI \u7684 \u6c34 \u6eb6 \u6db2\n(NACE TM 0284-2016A \u6eb6 \u6db2 \u3009"
+    }, {
+      "pH : Before introducting H2S(H5S \u901a \u5165 \u524d )": "2.64"
+    }, {
+      "pH : H2S saturated concentration(H2S \u9971 \u548c \u6d47 \u5ea6 )": "3.20"
+    }, {
+      "pH : After test( \u8bd5 \u9a8c \u7ed3 \u675f \u540e )": "3.71"
+    }, {
+      "Test Equipment\n\u201c \u68c0 \u6d4b \u8bbe \u5907": "HIC test assembly HIC \u4e13 \u7528 \u88c5 \u7f72"
+    }],
+
+    "7_header": [{
+      "No:": "FS200220101"
+    }, {
+      "Page": "3 of 4"
+    }],
+
+    "7_tested_analysis": [{
+      "Test\nAnalysls\n\u68c0\n\u6d4b\n\u5206 \u4e00 -\n\u673a": "Atfter 96 hours testing, cleaning the specimens, no hydrogen blistering can be seen on\nthe specimen surfaces, as shown in Fig.2,\n\nAtfter testing,each specimen was sectioned to be four parts as shown in NACE\nTM0284-2016 standard. Each section shall be polished metallographically and Only a\nlight etch shall be used. All faces to be examined were magnified to 100 times\nmagnification. There are no cracks within 1.0mm of the internal or extetnal surface of the\ntest specimeh,\n\n96 \u5c0f \u65f6 \u8bd5 \u9a8c \u7ed3 \u675f \u540e , \u6e05 \u7406 \u8bd5 \u6837 \u8868 \u9762 , \u672a \u53d1 \u73b0 \u6c22 \u9f13 \u6ce1 ( \u89c1 \u56fe 23\u3002 \u8bd5 \u6837 \u89c2 \u5bdf \u9762 \u4f9d \u636e\nNACE TM0284-2016 \u6807 \u51c6 \u6761 \u6b3e \u5207 \u53d6 \u3002 \u6bcf \u4e2a \u622a \u9762 \u91c7 \u7528 \u91d1 \u76f8 \u629b \u5149 , \u8150 \u8680 \u5927 \u7ea6 \u4e24 \u79d2 \u3002 \u5c06 \u5236\n\u5907 \u540e \u7684 \u8bd5 \u6837 \u7f6e \u4e8e \u91d1 \u76f8 \u663e \u5fae \u955c \u4e0b \u89c2 \u5bdf \u3014( \u653e \u5927 \u500d \u6570 \u4e3a 100 \u500d )\u3002 \u8ddd \u79bb \u8bd5 \u6837 \u5185 \u5916 \u8868 lmm\u7684{\n\u88c2 \u7eb9 \u4e0d \u7b97 \u3002"
+    }],
+
+    "7_tested_results_text": ["Test \u5bfb\nl\u652fE=Sult\n\u68c0\n\u6d4b\n\u7ed3\n\u8bba"],
+
+    "7_results_header": [
+      ["\u6837 \u54c1 \u7f16 \u53f7\nSpecimens MNo"],
+      ["\u68c0 \u6d4b \u9762\nDetected\ntface"],
+      ["CLR (%)", "\u5b9e \u6d4b \u503c\nMeasured\nvalue"],
+      ["CLR (%)", "\u5e73 \u5747 \u503c\nAverage"],
+      ["CTR (%)", "\u5b9e \u6d4b \u503c\nMeasutred\nvalue"],
+      ["\u5e73 \u5747 \u503c\nAverage"],
+      ["CSR (%)", "\u5b9e \u6d4b \u503c\nMeasured\nvalue"],
+      ["CSR (%)", "\u5e73 \u5747 \u503c\nAvetrage"]
+    ],
+
+    "7_results": [
+      ["1203-1", "}-]", "0", "0", "0", "0", "0", "0"],
+      ["1203-1", "1-2", "0", "0", "0", "0", "0", "0"],
+      ["1203-1", "1-3", "0", "0", "0", "0", "0", "0"],
+      ["1203-2", "2-1", "0", "0", "0", "0", "0", "0"],
+      ["1203-2", "2-2", "0", "0", "0", "0", "0", "0"],
+      ["1203-2", "2-3", "0", "0", "0", "0", "0", "0"],
+      ["1203-3", "3-1", "0", "0", "0", "0", "0", "0"],
+      ["1203-3", "3-2", "0", "0", "0", "0", "0", "0"],
+      ["1203-3", "3-3", "0", "0", "0", "0", "0", "0"]
+    ],
+
+    "7_footer": ["\u9a8c \u6536 \u6807 \u51c6 ( \u4e09 \u4e2a \u68c0 \u6d4b \u9762 \u5e73 \u5747 \u503c )\nz\u7f13C(:eI)\u2032[\u56a31\u66fclCe criteria \u300aThree test\nDelow average )", "/", "/", "S15%", "/", "S5%", "/", "S2%"],
+
+    "7_tested_by": ["Test by \u300a \u68c0 \u6d4b \u4eba ): \u6302 \u547d \u626c -"],
+
+    "7_reviewed_by": ["Reviewed by \u3014 \u5ba1 \u6838 \u4eba ): /`\u5be5_{\u8822\u4e61\u64ce'\u901e\u300c\u4ed1}"],
+
+    "7_test_date": ["Test Date ( \u68c0 \u6d4b \u65e5 \u671f ),Dec 6th, 2019~ Dec 10th, 2019 (2019.12.06 ~2019.12.10)"],
+
+    "8_test_no": "No: FS200220101",
+
+    "8_page": "Page 4 of 4",
+
+    "8_figure_1": {
+      "Fig.1 HIC test specimen dimension": "\u56fe 1 HIC \u8bd9 \u6837 \u5c3a \u5bf8"
+    },
+
+    "8_figure_2": {
+      "Fig.2 Morphology of the specimen surface": "\u56fe 2 \u8bd5 \u6837 \u8868 \u9762 \u5f62 \u8c8c \u56fe"
+    },
+
+    "8_figure_2_data": "1203 319120078 19307770",
+
+    "9_testing": ["\u4e2d \u56fd \u8ba4 \u53ef\n\u68c0 \u6d4b", "TESTING\nCNAS L3840"],
+
+    "9_company": ["\u8861 \u9633 \u534e \u840e \u94a2 \u7ba1 \u6709 \u9650 \u516c \u53f8 \u68c0 \u9a8c \u68c0 \u6d4b \u4e2d \u5fc3", "Test Center of Hengyang Valin Steel Tube Co., Ltd."],
+
+    "9_ssc_test_report": "SSC TEST REPORT",
+
+    "9_ssc": "SSC \u68c0 \u6d4b \u62a5 \u544a",
+
+    "9_test_no": "Test No \u3014 \u7f16 \u53f7 ): kS200220202",
+
+    "9_contract_no": "Contraet No \u3014 \u5408 \u540c \u53f7 ): 23191100050053",
+
+    "9_steel_grade": "Grade of Steel ( \u94a2 \u7ea7 ): BNS/X42NS",
+
+    "9_sample_size": "Sample Size ( \u89c4 \u683c ): 0219.1X 12.7mm",
+
+    "9_pipe_type": "Type of Pipe ( \u94a2 \u7ba1 \u7c7b \u578b ),_Seamless \u65e0 \u7f1d \u94a2 \u7ba1",
+
+    "9_test_method": "Test Method \u3008_i\u4e94\u6208\u5f57\u91d17\u3001\u4e8c\u6b79^\u6cd5\u3009: ]\u2026`()ll\u3011\u2032_'_\u53e0()i\u3010\u3011t l)(\u59bb\u4e28l(]i\u4e28\u3011g \u56db \u70b9 \u5f2f \u66f2",
+
+    "9_address": ["\u5730 \u5740 , \u6e56 \u5357 \u8861 \u9633 \u5e02 \u5927 \u6817 \u65b0 \u6751 10 \u53f7", "Address: No.10, Dalixincun, Hengyang, Hunan, China"],
+
+    "9_phone": ["\u7535 \u8bdd : 0734-8875123", "Telephone"],
+
+    "9_post_code": ["\u90b9 \u7f16 : 421001", "Post code"],
+
+    "9_fax": ["\u4f20 \u771f : 0734-8875123", "Fax"],
+
+    "10_title": ["INSTRUCTION", "\u6ce8 \u610f \u4e8b\n\u9879"],
+
+    "10_instructions": [
+      ["1. The report shall be invalid without the appropriate stamp specialized for test and paging seal on it.", "\u68c0 \u9a8c \u62a5 \u544a \u672a \u52a0 \u76d6 \u201c \u68c0 \u6d4b \u4e13 \u7528 \u7ae0 \u201c \u4e0e \u201c \u9a91 \u7f1d \u7ae0 \u201c \u65e0 \u6548 \u3002"],
+      ["2. The report shall be invalid without the signatures of the persons for authorization, or if any modifications on it.", "\u68c0 \u9a8c \u62a5 \u544a \u65e0 \u6388 \u6743 \u7b7e \u5b57 \u4eba \u7b7e \u5b57 \u65e0 \u6548 , \u6d82 \u6539 \u65e0 \u6548 \u3002"],
+      ["3. Reproduction in any organization or individual in part(except in whole) without prior written permission is prohibited", "\u672a \u7ecf \u4e66 \u9762 \u6279 \u51c6 , \u4e0d \u5f97 \u90e8 \u5206 \u590d \u5236 \u672c \u62a5 \u544a ( \u5168 \u90e8 \u590d \u5236 \u9664 \u5916 ) \u3002"],
+      ["4. For the entrusted sample tests, the responsibilities are undertaken for the delivered samples only.", "\u59d4\n\u6258\n\u68c0\n\u9a8c \u53ea \u5bf9\n\u4e00 \u6765\n\u6837\n\u8d1f\n1 \u8d23 \u3002"],
+      ["5. Ifany dissented opinions to the test report, it shall be reported to the test center within 15 days from the date of receiving the test report.", "\u5982 \u5bf9 \u672c \u62a5 \u544a \u6709 \u5f02 \u8bae , \u8bf7 \u5728 \u53d1 \u51fa \u62a5 \u544a \u4e4b \u65e5 \u8d77 15 \u5929 \u5185 \u63d0 \u51fa \u3002"],
+      ["6. The test Center will keep the samples for one month.", "\u672c \u4e2d \u5fc3 \u4fdd \u7559 \u68c0 \u6d4b \u6837 \u54c1 \u4e00 \u4e2a \u6708 \u3002"],
+      ["7. The projects with \u201c*\u201d are for subcontract, with \u201cAA\u201d are beyond the accreditation.", "\u5e26 \u201c*\u201c \u4e3a \u5206 \u5305 \u9879 \u76ee , \u5e26 \u201c \u4eba \u201c \u4e3a \u975e \u8ba4 \u53ef \u9879 \u76ee \u3002"]
+    ],
+
+    "11_title": "SSC Test Report",
+
+    "11_sub_title": "SSC \u68c0 \u6d4b \u62a5 \u544a",
+
+    "11_header": [{
+      "No:": "FS200220202"
+    }, {
+      "Page": "| of 3"
+    }],
+
+    "11_report_details": [{
+      "Otriginal of\nSpecimen\n\u9001 \u68c0 \u5355 \u4f4d": "340 Branch"
+    }, {
+      "Contract MNo.\n\u5408 \u540c \u53f7": "23191100030053 \u201c"
+    }, {
+      "Address\n\u5355 \u4f4d \u5730 \u5740": "NMNo. 10 Dalixincun, Hengyang, Hunan PR. CHINA 421001\n\u6e56 \u5357 \u7701 \u8861 \u9633 \u5e02 \u5927 \u6817 \u65b0 \u6751 10 \u53f7 421001"
+    }, {
+      "Gtrade of steel\n\u94a5 \u53f7": "BMNS/X42MNS"
+    }, {
+      "Product\nspecificatlon\nlever\n\u4ea7 \u54c1 \u89c4 \u8303 \u7b49 \u7ea7": "PSL2"
+    }, {
+      "Lot No.\n\u6279 \u53f7": "5319120263"
+    }, {
+      "Heat No.\n\u7089 \u53f7": "19308883"
+    }, {
+      "Q\n\u664b\u6691\u86cba\u8343l1'[i\u2032[\n1 y": "1 set (C3pcs )\n1 \u7ec4 ( \u4e2a )"
+    }, {
+      "Specimen State\n\u6837 \u54c1 \u72b6 \u6001": "As Standard\nRequilrement\n\u5408 \u683c |"
+    }, {
+      "Test Propertiles\n\u68c0 \u6d4b \u9879 \u76ee": "Four-point bending\n\u56db \u70b9 \u5f2f \u66f2"
+    }, {
+      "Method of test\nfor degreasing\n\u8131 \u6d4b \u8bd5 \u65b9 \u6cd5": "Wipe\n\u64e6 \u62ed \u6cd5"
+    }, {
+      "Test Standard\n\u68c0 \u6d4b \u6807 \u51c6": "ASTM G39-99(R2016)"
+    }, {
+      "Test Concluslon\n\u68c0 \u6d4b \u7ed3 \u8bba": "Applied stress is 277.6MPa \u300a347MPax80%6) ,and test solution A\nconsist of 3.0 wt0% sodium chloride and 0.5 wt%6 glacial acetic acld\ndissolved in distilled water. Each test has three specimens,\n\nThere is nho visual surface cracks are observed on all specimens\n\n_after completing the 720-hour test duration,magnification 10,. \u56fd\n\n\u52a0 \u8f7d \u5e94 \u529b \u4e3a 277.6MPa,A \u6eb6 \u6db2 \u5305 \u62ec 0.5wt% \u51b0 \u918b \u9178 +Swt%MNaCl\n\u7684 \u6c34 \u6eb6 \u6db2 , \u6bcf \u6b21 \u5b9e \u9a8c \u4e09 \u4e2a \u8bd5 \u6837 \u3002720h \u8bd5 \u9a8c \u540e , \u5b8f \u89c2 \u68c0 \u67e5 , \u4e09 \u4e2a \u8bd5\n\u6837 \u90fd \u672a \u53d1 \u751f \u65ad \u88c2 , \u653e \u5927 10 \u500d \u68c0 \u67e5 \u5747 \u672a \u53d1 \u73b0 \u88c2 \u7eb9 \u3002"
+    }, {
+      "Collected by\n\u6c47 \u603b": "\u4ec1 2y"
+    }, {
+      "Certified by\n\u6279 \u51c6": "~ \u626c"
+    }, {
+      "Issue Date\n\u7b7e \u53d1 \u65e5 \u671f": "Jaxo . L"
+    }],
+
+    "12_title": "SSC Test Report (Annex)",
+
+    "12_sub_title": "SSC \u68c0 \u6d4b \u62a5 \u544a ( \u9644 \u4ef6 )",
+
+    "12_header": [{
+      "No:": "FS200220202"
+    }, {
+      "Page": "2 of 3"
+    }],
+
+    "12_report_details": [{
+      "Gtrade of steel\n\u94a2 \u53f7": "BMNS/X42MNS"
+    }, {
+      "Silze\n\u89c4 \u683c": "\u5c71 219.1 X 12.7mm"
+    }, {
+      "Lot No.\n\u6279 \u53f7": "519120263"
+    }, {
+      "Heat MNo.\n\u7089 \u53f7": "19308883"
+    }, {
+      "Test Properties\n\u68c0 \u6d4b \u9879 \u76ee": "Four-point bending\n\u56db \u70b9 \u5f2f \u66f2"
+    }, {
+      "Specimen Mo.\n\u8bd5 \u6837 \u7f16 \u53f7": "W1206-1, wW1206-2, W1206-3"
+    }, {
+      "Test Standard\n\u68c0 \u6d4b \u6807 \u51c6": "ASTM G39-99(R2016)"
+    }, {
+      "Dimension of\nSpeclimens\n\u8bd5 \u6837 \u5c3a \u5bf8": "The four-point loaded specimen holder is shown in Flg.1,Test\nspecimens shall be taken ftom the pipe with the longitudinal axis. The\ngauge of test specimens is 115mmx15mmx3mma.\n\n\u56db \u70b9 \u5f2f \u66f2 \u8bd5 \u6837 \u5939 \u5177 \u89c1 \u56fe 1, \u6837 \u54c1 \u6cbf \u94a2 \u7ba1 \u7eb5 \u5411 \u65b9 \u5411 \u53d6 \u6837 , \u53d6 \u4e09 \u4e2a \u5e73\n\u884c \u8bd5 \u6837 , \u6bcf \u4e2a \u8bd5 \u6837 \u5c3a \u5bf8 : 115x15x5mm\u3002"
+    }, {
+      "Temperature\n\u6e29 \u5ea6": "(23-25)C"
+    }, {
+      "Load Stress\n\u52a0 \u8f7d \u5e94 \u529b": "277.6MPa"
+    }, {
+      "Deaetrated Gas\n\u9664 \u6c27 \u6c14 \u4f53": "High-putity\n\u9ad8 \u7eaf N"
+    }, {
+      "Test Gas\n\u8bd5 \u9a8c \u6c14 \u4f53": "Fp2S"
+    }, {
+      "H28\nconcentration\nH2S \u6d53 \u5ea6": "\u5c39 2300ppm"
+    }, {
+      "Test Time\n\u8bd5 \u9a8c \u65f6 \u95f4": "720 hours"
+    }, {
+      "Degreased\n\u8131 \u670d": "Prior to testing,the test specimens shall be degreased\nwith ethanol and rinsed with acetone. The adequacy ol\nthe degreasing by the atomizer test in accordance with\nASTM Standard 21.\n\n\u8bd5 \u9a8c \u524d , \u4f9d \u636e ASTM \u6807 \u51c6 F 21 \u5e94 \u7528 \u4e09 \u6c2f \u4e59 \u70f7 \u6216 \u7c7b \u4f3c\n\u8131 \u8102 \u5242 \u5bf9 \u8bd5 \u4ef6 \u9664 \u6cb9 , \u7136 \u540e \u9009 \u62e9 \u5408 \u9002 \u7684 \u6eb6 \u6db2 , \u5982 \u4e19 \u916e \u8fdb\n\u884c \u6e05 \u6d17 \u3002"
+    }, {
+      "Test Solution\n\u8bd5 \u9a8c \u6eb6 \u6db2": "0.5wt% CH5COOH and 3.0wt%6 NaCl in distilled water\nsaturated with F2S \u300aNACE TM0177-2005solution A )\nNACE TM0177-2005 \u6807 \u51c9 A \u6eb6 \u6db2 :\nH5S \u9971 \u548c \u7684 0.5wt% \u51b0 \u918b \u9178 +5Swt%MNaCl \u7684 \u6c34 \u6eb6 \u6db2"
+    }, {
+      "pH": "2.66 \u3014\u300abetfore introducting H2S \u901a \u5165 H2S \u4e4b \u524d )"
+    }, {
+      "pH": "3.92 \u3014after test \u8bd5 \u9a8c \u7ed3 \u675f \u540e )"
+    }],
+
+    "13_header": [{
+      "No:": "FS200220202"
+    }, {
+      "Page": "3 of 3"
+    }],
+
+    "13_report_details": [{
+      "L Load\nDisplacement\nCalculation\n\u52a0 \u8f7d \u4f4d \u79fb \u8ba1\n\u7b97": "C =12KtL, \u5e3dH2 \u4e00 \u5c6f42)\n\nWhere:;0 \u4e00 maximum tensional stress, MPa; E \u4e00 modulus of elasticity,\n\nPa; t-LLspecimen thickness, mm;Ym \u4e00 maximum deflection between\nouter supporting points,mm; H -distance between outer supports, mm;\nA \u4e00 distance between inner and outer supporting points, mmi.\n\n\u5f0f \u4e2d : 0 \u4e00 \u52a0 \u8f7d \u5e94 \u529b ,MPa; E \u4e00 \u5f39 \u6027 \u6a21 \u91cf ,MPa; t \u4e00 \u8bd5 \u6837 \u539a \u5ea6 ,\nmm; \u516b \u4e00 \u5916 \u652f \u70b9 \u95f4 \u7684 \u6700 \u5927 \u6320 \u5ea6 \u5373 \u52a0 \u8f7d \u4f4d \u79fb , mm; H__ \u5916 \u652f \u70b9 \u95f4 \u8ddd \u79bb ,\nmm; A \u4e00 \u5185 \u5916 \u652f \u70b9 \u95f4 \u8ddd \u79bb ,mm\u3002"
+    }, {
+      "Test Result\n\u68c0 \u6d4b \u7ed3 \u8bba\n\u71b9": "`NO visual surface cracks are observed on all specimens after\n\ncompleting the 720-hour test duration \u300aFigure 2),magnification 10:.\n720h \u8bd5 \u9a8c \u540e , \u5b8f \u89c2 \u68c0 \u67e5 , \u4e09 \u4e2a \u8bd5 \u6837 \u90fd \u672a \u53d1 \u751f \u65ad \u88c2 , \u653e \u5927 10 \u500d \u68c0 \u67e5 \u5747\n\u672a \u53d1 \u73b0 \u88c2 \u7eb9 \u3014 \u89c1 \u56fe 2)\u3002"
+    }],
+
+    "13_tested_by": "Test by \u3014 \u68c0 \u6d4b \u4eba ); \u4e8c\u58d1\u300e\u2032\u7085\u300e\u3009)\u4e13\u7c2a\u300b ",
+
+    "13_reviewed_by": "Reviewed by\u3008 \u5ba1 \u6838 \u4eba ): /\u5b98\u9701\u4e10\u3014\u70f9\u6be1\u8fc1\u53e0",
+
+    "13_test_date": "Test Date ( \u68c0 \u6d4b \u65e5 \u671f ),Dec.21,2019-Jan.20,2020 2019.12.21-2020.01.20"
+  }
+}

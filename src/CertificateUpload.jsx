@@ -4,6 +4,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import DragDrop from "./DragDrop";
 import api from './appApi';
 import Request from 'axios-request-handler';
+import stub from './stubs/scratch.json';
 const INITIATE_PROCESSING_URL = window.location.protocol + '//' + window.location.hostname + "/listing/";
 const POLLING_INTERVAL = 10000;
 
@@ -35,12 +36,64 @@ class CertificateUpload extends React.Component {
         });
     }
 
+    parseResults(result) {
+        let results = [];
+        for (let key of Object.keys(result)) {
+            let row = result[key];
+            if (typeof row === "string") {
+                let rowRes = {};
+                rowRes.name = "";
+                rowRes.value = row;
+                results.push(rowRes);
+            } else if (typeof row === "object" && Array.isArray(row) && row.length > 0) {
+                if (typeof row[0] === "string" && row.length === 2) {
+                    let rowRes = {};
+                    rowRes.name = row[0];
+                    rowRes.value = row[1];
+                    results.push(rowRes);
+                } else if (typeof row[0] === "object" && Array.isArray(row[0])) {
+                    for (let index in row) {
+                        if (key.includes("_header") > 0) {
+                            let rowRes = {};
+                            let rowVal = [];
+                            rowRes.name = row[index].join();
+                            rowRes.value = rowVal;
+                            results.push(rowRes);
+                        } else {
+                            if (row.length > 0) {
+                                for (let a of row) {
+                                    for (let ind in a) {
+                                        let len = results.length - a.length + Number(ind);
+                                        if (results[len] && results[len].value && Array.isArray(results[len].value)) {
+                                            results[len].value.push(a[ind]);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } else if (typeof row[0] === "object") {
+                    for (let r of row) {
+                        for (let k in r) {
+                            results.push({name: k, value: r[k]});
+                        }
+                    }
+                }
+            }
+
+        }
+        return results;
+    }
+
     extract() {
         if (!this.state.file) {
             window.alert("No file selected. Please upload file.");
             return;
         }
-
+        // todo uncomment below 3 lines for stubs
+        // this.setState({
+        //     result: this.parseResults(stub.data)
+        // });
         api.upload({
             file: this.state.file,
             type: this.state.vendor
@@ -50,18 +103,10 @@ class CertificateUpload extends React.Component {
                     fileId: response.data.fileID
                 });
                 this.startProcessing(response.data.fileID).then((response) => {
-                    console.log("" + JSON.stringify(response));
-                    // todo process the received data.
                     this.setState({
-                        result: ['sdc']
+                        result: this.parseResults(response)
                     });
                 }).catch((err) => alert(err));
-          /*      api.startProcessing().then((response) => {
-                    console.log("" + response);
-                    this.setState({
-                        result: ['sdc']
-                    });
-                }).catch((err) => alert(err));*/
             } else {
                 alert("Error uploading the file.");
             }
@@ -69,22 +114,6 @@ class CertificateUpload extends React.Component {
             alert(error.response.data.errorMessage);
         });
     }
-
-    // initiateProcessing(fileID) {
-    //     return api.initiateProcessing(fileID)
-    //         .then((response) => {
-    //             if (response.status === 200) {
-    //                 if (response.data.status === "Processed") {
-    //                     return Promise.resolve(response.data.data);
-    //                 } else {
-    //                     return Promise.resolve()
-    //                         .then(this.initiateProcessing(fileID)).
-    //                 }
-    //             } else {
-    //                 alert("Error initiating the process the file.");
-    //             }
-    //         })
-    // }
 
     clear() {
         this.setState({
@@ -94,7 +123,7 @@ class CertificateUpload extends React.Component {
     }
 
     startProcessing(fileId) {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             let data = {};
             let dataReceived = false;
             const initProcessing = new Request(INITIATE_PROCESSING_URL + fileId);
@@ -249,45 +278,28 @@ class CertificateUpload extends React.Component {
                             <table style={{"margin": "auto"}} className="resultTable">
                                 <tbody>
                                 <tr>
-                                    <th>Key</th>
+                                    <th>Name</th>
                                     <th>Value</th>
                                 </tr>
-                                <tr>
-                                    <td>Number / Numero:</td>
-                                    <td>01-19-14826</td>
-                                </tr>
-                                <tr>
-                                    <td>Date / Data:</td>
-                                    <td>December 19, 2019</td>
-                                </tr>
-                                <tr>
-                                    <td>Page / Pagina:</td>
-                                    <td>1/8</td>
-                                </tr>
-                                <tr>
-                                    <td>Dimensions / Dimensioni:</td>
-                                    <td>@ 24.000" O.D. x .969" W.T.<br/>@610.00mm O.D. x 24.61mm W."</td>
-                                </tr>
-                                <tr>
-                                    <td>Schedule / Schedula:</td>
-                                    <td>60</td>
-                                </tr>
-                                <tr>
-                                    <td>Length / Lunghezza:</td>
-                                    <td>34.449 ft + 38.714 ft<br/>10500 mm + 11800 mm</td>
-                                </tr>
-                                <tr>
-                                    <td>Standard or Specification / Norme o specifica:</td>
-                                    <td>See note nr.1<br/>Vedi nota nr.1 ae BS</td>
-                                </tr>
-                                <tr>
-                                    <td>Manufacture Process / Processo di fabbricazione:</td>
-                                    <td>NORMALIZED<br/>NORMALIZZATI</td>
-                                </tr>
-                                <tr>
-                                    <td>Product Type / Tipo di prodotto:</td>
-                                    <td>SEAMLESS LINE PIPES (WITH EXTRA REQUIREMENTS)<br/>TUBI S.S. LINE PIPE (CON RICHIESTE SUPPLEMENTARI)</td>
-                                </tr>
+                                {
+                                    this.state.result.map((result, index) => (
+                                        <tr key={index}>
+                                            <td>{result.name}</td>
+                                            {
+                                                !Array.isArray(result.value) ?
+                                                    <td>{result.value}</td> :
+                                                    result.value.map((item, index) => {
+                                                        if (index < Math.sqrt(result.value.length)) {
+                                                            return  <td key={index}>{item}</td>
+                                                        } else {
+                                                            return ""
+                                                        }
+                                                    }
+                                                    )
+                                            }
+                                        </tr>
+                                    ))
+                                }
                                 </tbody>
                             </table>
                         </div>
