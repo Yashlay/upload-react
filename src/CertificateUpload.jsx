@@ -142,6 +142,7 @@ class CertificateUpload extends React.Component {
                 if (res.data.status === "Processed") {
                     dataReceived = true;
                     data = res.data.data;
+                    resolve(data);
                     return false;
                 }
             });
