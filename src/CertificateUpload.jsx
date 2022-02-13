@@ -99,10 +99,13 @@ class CertificateUpload extends React.Component {
             result: parsedResults.resultant,
             maxSize: parsedResults.maxSize
         });
-        api.upload({
-            file: this.state.file,
-            type: this.state.vendor
-        }).then((response) => {
+        const formData = new FormData();
+        formData.append(
+            "file",
+            this.state.file,
+            this.state.file.name
+        );
+        api.upload(formData, this.state.vendor).then((response) => {
             if (response.status === 200) {
                 this.setState({
                     fileId: response.data.fileID

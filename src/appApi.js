@@ -1,14 +1,14 @@
 let axios = require('axios');
 let domain = window.location.protocol + '//' + window.location.hostname;
-const UPLOAD_URL = domain + "/upload";
+const UPLOAD_URL = domain + "/upload?type=";
 // const INITIATE_PROCESSING_URL = domain + "/listing/";
 // const POLLING_INTERVAL = 10000;
 
 module.exports = {
 
-    upload: (fileData) => {
+    upload: (fileData, vendorId) => {
         return new Promise((resolve, reject) => {
-            axios.post(UPLOAD_URL, fileData, {
+            axios.post(UPLOAD_URL + vendorId, fileData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
