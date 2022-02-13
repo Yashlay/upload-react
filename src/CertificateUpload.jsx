@@ -94,11 +94,11 @@ class CertificateUpload extends React.Component {
             return;
         }
         // todo uncomment below 3 lines for stubs
-        let parsedResults = this.parseResults(stub.data);
-        this.setState({
-            result: parsedResults.resultant,
-            maxSize: parsedResults.maxSize
-        });
+        // let parsedResults = this.parseResults(stub.data);
+        // this.setState({
+        //     result: parsedResults.resultant,
+        //     maxSize: parsedResults.maxSize
+        // });
         const formData = new FormData();
         formData.append(
             "file",
