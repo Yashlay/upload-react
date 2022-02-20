@@ -181,6 +181,11 @@ class CertificateUpload extends React.Component {
         this.changePage(1);
     }
 
+    logout() {
+        localStorage.removeItem("isLoggedIn");
+        window.location.replace('/');
+    }
+
     changePage(offset) {
         const pageNumber = this.state.pageNumber;
         this.setState({
@@ -189,8 +194,13 @@ class CertificateUpload extends React.Component {
     }
 
     render() {
+        const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
         return (
+            isLoggedIn ?
             <div className="App">
+                <div style={{'display':'flex', 'flexDirection': "row-reverse"}}>
+                    <button onClick={this.logout}>Logout</button>
+                </div>
                 <div style={{'borderBottom': '1px solid grey', 'marginBottom': '10px'}}>
                     <img src='https://www.gerab.com/images/logo.png' width='75px' height='75px' className='App-logo'
                          alt="logo"/>
@@ -337,7 +347,10 @@ class CertificateUpload extends React.Component {
 
                         <button style={{"margin": "15px"}} onClick={this.clear.bind(this)}>Clear</button>
                     </div> : ""}
-            </div>
+            </div> : <div style={{"margin": "20%",
+                    "display": "flex",
+                    "justifyContent": "center"
+            }}>Not accessible without login. Please &nbsp; <a href={"/"}> click here </a> &nbsp; to go to login page</div>
         );
     }
 }

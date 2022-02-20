@@ -3,11 +3,27 @@ import React from "react";
 class Login extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            "login": "",
+            "password": "",
+            showError: false
+        };
     }
 
     login = () => {
-        window.location.replace('/upload');
+        if (this.state.login === "admin@admin.com" && this.state.password === "admin") {
+            this.setState({
+                showError: false
+            });
+            localStorage.setItem("isLoggedIn", "true");
+            window.location.replace('/upload');
+        } else {
+            localStorage.setItem("isLoggedIn", "false");
+            this.setState({
+                showError: true
+            });
+        }
+
     }
 
     render() {
@@ -36,7 +52,13 @@ class Login extends React.Component {
                         <div className="email">
                             <label htmlFor="email" className="emailLabel">Email</label>
                             <input className="Input_root__eG6Wl" autoComplete="off"
+                                   value={this.state.login}
                                    autoCorrect="off" autoCapitalize="off" spellCheck="false"
+                                   onChange={(e) => {
+                                       this.setState({
+                                           login: e.target.value
+                                       });
+                                   }}
                                    type="email" id="email">
                             </input>
                         </div>
@@ -45,6 +67,12 @@ class Login extends React.Component {
                             <input className="Input_root__eG6Wl" autoComplete="off" autoCorrect="off"
                                    autoCapitalize="off"
                                    spellCheck="false"
+                                   value={this.state.password}
+                                   onChange={(e) => {
+                                       this.setState({
+                                           password: e.target.value
+                                       });
+                                   }}
                                    type="password">
                             </input>
                         </div>
@@ -52,6 +80,9 @@ class Login extends React.Component {
                             <input type="checkbox" value="lsRememberMe" id="rememberMe"/>
                             <label htmlFor="rememberMe">Remember me</label>
                         </div>
+                        {this.state.showError ? <div className="rememberMe" style={{"color": "red"}}>
+                            <label htmlFor="rememberMe">Email or password entered by you is incorrect!</label>
+                        </div> : ""}
                         <div style={{"display": "inline-flex"}}>
                             <div className="terms"> By signing in, you are agreeing to WIAN <span
                                 style={{"color": "#4375A3", "cursor": "pointer"}}> Terms of Use </span> and <span
