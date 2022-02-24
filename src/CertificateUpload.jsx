@@ -49,27 +49,38 @@ class CertificateUpload extends React.Component {
                 rowRes.value = row;
                 results.push(rowRes);
             } else if (typeof row === "object" && Array.isArray(row) && row.length > 0) {
-                if (typeof row[0] === "string" && row.length === 2) {
+                if (typeof row[0] === "string" && row.length >= 1) {
                     let rowRes = {};
                     rowRes.name = row[0];
-                    rowRes.value = row[1];
+                    if (row.length === 2) {
+                        rowRes.value = row[1];
+                    }
                     results.push(rowRes);
                 } else if (typeof row[0] === "object" && Array.isArray(row[0])) {
                     maxSize = Math.max(maxSize, row.length);
-                    for (let index in row) {
-                        if (key.includes("_header") > 0) {
-                            let rowRes = {};
-                            let rowVal = [];
-                            rowRes.name = row[index].join();
-                            rowRes.value = rowVal;
+                    if (this.state.vendor === 1) {
+                        let rowRes = {};
+                        if (row.length > 0) {
+                            rowRes.name = '-1';
+                            rowRes.value = row;
                             results.push(rowRes);
-                        } else {
-                            if (row.length > 0) {
-                                for (let a of row) {
-                                    for (let ind in a) {
-                                        let len = results.length - a.length + Number(ind);
-                                        if (results[len] && results[len].value && Array.isArray(results[len].value)) {
-                                            results[len].value.push(a[ind]);
+                        }
+                    } else {
+                        for (let index in row) {
+                            if (key.includes("_header") > 0) {
+                                let rowRes = {};
+                                let rowVal = [];
+                                rowRes.name = row[index].join();
+                                rowRes.value = rowVal;
+                                results.push(rowRes);
+                            } else {
+                                if (row.length > 0) {
+                                    for (let a of row) {
+                                        for (let ind in a) {
+                                            let len = results.length - a.length + Number(ind);
+                                            if (results[len] && results[len].value && Array.isArray(results[len].value)) {
+                                                results[len].value.push(a[ind]);
+                                            }
                                         }
                                     }
                                 }
@@ -95,11 +106,11 @@ class CertificateUpload extends React.Component {
             return;
         }
         // todo uncomment below 3 lines for stubs
-        // let parsedResults = this.parseResults(stub.data);
-        // this.setState({
-        //     result: parsedResults.resultant,
-        //     maxSize: parsedResults.maxSize
-        // });
+        let parsedResults = this.parseResults(stub.data);
+        this.setState({
+            result: parsedResults.resultant,
+            maxSize: parsedResults.maxSize
+        });
         const formData = new FormData();
         formData.append(
             "file",
@@ -323,20 +334,36 @@ class CertificateUpload extends React.Component {
                                     <th colSpan={this.state.maxSize}>Value</th>
                                 </tr>
                                 {
-                                    this.state.result.map((result, index) => (
+                                    this.state.vendor !== 1 ? this.state.result.map((result, index) => (
                                         <tr key={index}>
                                             <td>{result.name}</td>
                                             {
                                                 !Array.isArray(result.value) ?
-                                                    <td>{result.value}</td> :
+                                                    <td style={{minWidth: '200px'}}>{result.value}</td> :
                                                     result.value.map((item, index) => {
                                                         if (index < Math.sqrt(result.value.length)) {
-                                                            return  <td key={index}>{item}</td>
+                                                            return  <td style={{minWidth: '200px'}} key={index}>{item}</td>
                                                         } else {
                                                             return ""
                                                         }
-                                                    }
-                                                    )
+                                                    })
+                                            }
+                                        </tr>
+                                    )) : this.state.result.map((result, index) => (
+                                        <tr key={index}>
+                                            {!Array.isArray(result.value) ? <td>{result.name}</td> : ''}
+                                            {
+                                                !Array.isArray(result.value) ?
+                                                    <td style={{minWidth: '200px'}}>{result.value}</td> :
+                                                    result.value.map((item, index) => (
+                                                        <tr key={index}>
+                                                            {
+                                                            item.map((itemVal, itemValIndex) => {
+                                                                return  <td key={itemValIndex}>{itemVal}</td>
+                                                            })
+                                                        }
+                                                        </tr>
+                                                    ))
                                             }
                                         </tr>
                                     ))
