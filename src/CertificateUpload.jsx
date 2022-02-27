@@ -350,22 +350,17 @@ class CertificateUpload extends React.Component {
                                             }
                                         </tr>
                                     )) : this.state.result.map((result, index) => (
-                                        <tr key={index}>
-                                            {!Array.isArray(result.value) ? <td>{result.name}</td> : ''}
-                                            {
-                                                !Array.isArray(result.value) ?
-                                                    <td style={{minWidth: '200px'}}>{result.value}</td> :
-                                                    result.value.map((item, index) => (
-                                                        <tr key={index}>
-                                                            {
-                                                            item.map((itemVal, itemValIndex) => {
-                                                                return  <td key={itemValIndex}>{itemVal}</td>
-                                                            })
-                                                        }
-                                                        </tr>
-                                                    ))
-                                            }
-                                        </tr>
+                                            !Array.isArray(result.value) ? <tr> {result.name !== "-1" ? <td>{result.name}</td> : ""}
+                                                <td style={{minWidth: '200px'}}>{result.value}</td></tr> : result.value.map((item, index) => (
+                                                <tr key={index}>
+                                                    {result.name !== "-1" ? <td>{result.name}</td> : ""}
+                                                    {
+                                                        Array.isArray(item) ? item.map((itemVal, itemValIndex) => {
+                                                            return  <td key={itemValIndex}>{itemVal}</td>
+                                                        }) : <td key={index}>{item}</td>
+                                                    }
+                                                </tr>
+                                            ))
                                     ))
                                 }
                                 </tbody>
