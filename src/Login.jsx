@@ -30,7 +30,7 @@ class Login extends React.Component {
         return (
             <div className="App">
                 <div style={{'borderBottom': '1px solid grey', 'marginBottom': '10px'}}>
-                    <img src='https://www.gerab.com/images/logo.png' width='75px' height='75px' className='App-logo'
+                    <img src='https://www.gerab.com/wp-content/themes/gerab/images/logo.png' width='75px' height='75px' className='App-logo'
                          alt="logo"/>
                 </div>
                 <div className="flex flex-col creds">
